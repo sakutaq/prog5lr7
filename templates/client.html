@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Currency Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>Currency Tracker</h1>
+        <div id="client-id"></div>
+        <div id="currency-data"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script> <!-- Подключение socket.io-client -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}
