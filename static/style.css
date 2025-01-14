@@ -1,0 +1,11 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#currency-data{
+    white-space: pre-wrap;
+}
